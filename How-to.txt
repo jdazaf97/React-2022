@@ -1,0 +1,10 @@
+1. How to start the React App:
+	Step 1: Open CMD (Windows).
+	Step 2: Create the folder of the app. we need call the directory of this folder in the CMD, use this command:
+			cd [directory]; Example: cd C:\Users\Example\Documents\Proyects_Example.
+	Step 3: When you are in the project folder we can create the project inside the folder with this command:
+			npx create-react-app [name-react-app]
+		if this is the first time you run this command on your pc, it will ask you to install the React packages, type yes and it will continue creating the app.
+	Step 4: Start the development server:
+			npm start
+		if you have already created the app before and you just want to start the server, you just have to be inside the app folder in CMD (use the command: cd [directory]) and then npm start.
