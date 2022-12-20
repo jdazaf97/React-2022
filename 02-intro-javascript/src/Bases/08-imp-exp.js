@@ -5,7 +5,7 @@
 
 //una forma de importar un archivo es usando la palabra reservada "import" la cual su sintaxis es de la siguiente manera: import { [informacion que queremos importar] } from '[ubicacion del archivo a importar]'. NOTA, al escribir la ubicacion del archivos omitir espacios.
 
-    import { heroes } from './data/heroes'
+    import { heroes } from '../data/heroes'
     console.log( heroes );
 
 //Para entender un poco el funcionamiento realizaremos el siguiente ejercicio:
