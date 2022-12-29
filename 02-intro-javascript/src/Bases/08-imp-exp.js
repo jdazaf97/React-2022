@@ -6,7 +6,7 @@
 //una forma de importar un archivo es usando la palabra reservada "import" la cual su sintaxis es de la siguiente manera: import { [informacion que queremos importar] } from '[ubicacion del archivo a importar]'. NOTA, al escribir la ubicacion del archivos omitir espacios.
 
     import { heroes } from '../data/heroes'
-    console.log( heroes );
+    // console.log( heroes );
 
 //Para entender un poco el funcionamiento realizaremos el siguiente ejercicio:
     //Debemos retornar un heroe segun el id que se especifica al llamar en cosola:
@@ -37,21 +37,21 @@
 
 //Una manera de simplificar la anterior solucion es la siguiente:
 
-const getHeroeById = (id) => {
+export const getHeroeById = (id) => {
     //return true; //realizamos pruebas con true para drevisar los valores que arroja
     return heroes.find( heroe => heroe.id ===id); //aqui simplemente se pregunta que si el heroe.id es igual al id, entonces retorna verdadero, lo por que nos da el mismo resultado
 }
 
-console.log( getHeroeById(2) );
+// console.log( getHeroeById(2) );
 
 //Ahora se quiere devolver a quien pertenece el heroe sin embargo para este caso no se necesita el find porque este solo devuelve uno, sino que se usa el filter puesto que este crea un nuevo arreglo junto con todos los elementos que cumplan la condicion implementada por la funcion.
 
 
-const getHeroeByOwner = (owner) => {
+export const getHeroeByOwner = (owner) => {
     return heroes.filter( heroe => heroe.owner === owner);
 }
 
-console.log( getHeroeByOwner('Marvel') )
+// console.log( getHeroeByOwner('Marvel') )
 
 
 //DOCUMENTACION UTILIZADA:
