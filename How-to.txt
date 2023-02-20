@@ -1,13 +1,35 @@
 Resources for Developers: https://developer.mozilla.org/es/
 
-
-1. How to start the React App:
-	Step 1: Open CMD (Windows).
-	Step 2: Create the folder of the app. we need call the directory of this folder in the CMD, use this command:
+CREATE APP WITH CRA: https://create-react-app.dev/
+1. Open CMD (Windows).
+2. Create the folder of the app. we need call the directory of this folder in the CMD, use this command:
 			cd [directory]; Example: cd C:\Users\Example\Documents\Proyects_Example.
-	Step 3: When you are in the project folder we can create the project inside the folder with this command:
+3. When you are in the project folder we can create the project inside the folder with this command:
 			npx create-react-app [name-react-app]
 		if this is the first time you run this command on your pc, it will ask you to install the React packages, type yes and it will continue creating the app.
-	Step 4: Start the development server:
+4. Start the development server:
 			npm start
+			or
+			npm run dev
 		if you have already created the app before and you just want to start the server, you just have to be inside the app folder in CMD (use the command: cd [directory]) and then npm start.
+
+
+CREATE APP WITH VITE: https://vitejs.dev/
+
+1. dentro del cmd nos dirigimos a la carpeta donde tendremos almacenada la app usando el comando cd
+2. ahora usamos el codigo npm (global) o yarn (local):
+	-yarn create vite
+	o
+	-npm create vite
+3. ahora dar el nombre del proyecto.
+4. solicitara el framework que queremos usar, en este caso REACT
+5. solicitara el tipo de variant, en este caso JavaScript
+6. Realizamos cd a la carpeta del proyecto
+7. instalamos las dependencias:
+	-yarn 
+	o
+	-yarn install
+	o
+	-npm install
+
+documentacion de vite: https://vitejs.dev/guide/
